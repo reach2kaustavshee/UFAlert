@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  UFAlertExample
+//  UFAlertEG
 //
 //  Created by Kaustav Shee on 14/12/19.
 //  Copyright © 2019 Kaustav Shee. All rights reserved.
