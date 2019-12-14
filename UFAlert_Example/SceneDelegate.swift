@@ -1,13 +1,14 @@
 //
 //  SceneDelegate.swift
-//  UFAlertEG
+//  UFAlert_Example
 //
-//  Created by Kaustav Shee on 14/12/19.
+//  Created by Kaustav Shee on 15/12/19.
 //  Copyright © 2019 Kaustav Shee. All rights reserved.
 //
 
 import UIKit
 
+@available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
