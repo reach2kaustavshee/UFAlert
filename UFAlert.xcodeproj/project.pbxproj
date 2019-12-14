@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		270001C323887A8900C8C4C4 /* UFAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270001B923887A8900C8C4C4 /* UFAlert.framework */; };
 		270001CA23887A8900C8C4C4 /* UFAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 270001BC23887A8900C8C4C4 /* UFAlert.h */; platformFilter = ios; settings = {ATTRIBUTES = (Public, ); }; };
+		2706D1BF23A523D500EE7E60 /* Item.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2706D1BE23A523D500EE7E60 /* Item.plist */; };
 		2747A5A723A51BC900126343 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2747A5A623A51BC900126343 /* AppDelegate.swift */; };
 		2747A5A923A51BC900126343 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2747A5A823A51BC900126343 /* SceneDelegate.swift */; };
 		2747A5AB23A51BC900126343 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2747A5AA23A51BC900126343 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 		270001BD23887A8900C8C4C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		270001C223887A8900C8C4C4 /* UFAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UFAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		270001C923887A8900C8C4C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2706D1BE23A523D500EE7E60 /* Item.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Item.plist; sourceTree = "<group>"; };
 		2747A5A423A51BC900126343 /* UFAlertEG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UFAlertEG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2747A5A623A51BC900126343 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2747A5A823A51BC900126343 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				2747A5A823A51BC900126343 /* SceneDelegate.swift */,
 				2747A5AA23A51BC900126343 /* ViewController.swift */,
 				2747A5AC23A51BC900126343 /* Main.storyboard */,
+				2706D1BE23A523D500EE7E60 /* Item.plist */,
 				2747A5AF23A51BCB00126343 /* Assets.xcassets */,
 				2747A5B123A51BCB00126343 /* LaunchScreen.storyboard */,
 				2747A5B423A51BCB00126343 /* Info.plist */,
@@ -297,6 +300,7 @@
 				2747A5B323A51BCB00126343 /* LaunchScreen.storyboard in Resources */,
 				2747A5B023A51BCB00126343 /* Assets.xcassets in Resources */,
 				2747A5AE23A51BC900126343 /* Main.storyboard in Resources */,
+				2706D1BF23A523D500EE7E60 /* Item.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
