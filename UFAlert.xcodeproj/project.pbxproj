@@ -16,9 +16,14 @@
 		2722905D23A564F300DB6B4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2722905C23A564F300DB6B4B /* Assets.xcassets */; };
 		2722906023A564F300DB6B4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2722905E23A564F300DB6B4B /* LaunchScreen.storyboard */; };
 		275DE78F23A2C1A70018E53D /* UFBannerView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 27DC1A69238A979900973500 /* UFBannerView.swift */; platformFilter = ios; settings = {ATTRIBUTES = (Private, ); }; };
-		275DE79B23A41A1B0018E53D /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275DE79A23A41A1B0018E53D /* PaddingLabel.swift */; };
-		275DE79C23A41A4B0018E53D /* PaddingLabel.swift in Headers */ = {isa = PBXBuildFile; fileRef = 275DE79A23A41A1B0018E53D /* PaddingLabel.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		275DE79B23A41A1B0018E53D /* UFPaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275DE79A23A41A1B0018E53D /* UFPaddingLabel.swift */; platformFilter = ios; };
+		275DE79C23A41A4B0018E53D /* UFPaddingLabel.swift in Headers */ = {isa = PBXBuildFile; fileRef = 275DE79A23A41A1B0018E53D /* UFPaddingLabel.swift */; platformFilter = ios; settings = {ATTRIBUTES = (Public, ); }; };
 		275DE79E23A41A8F0018E53D /* UFAlert.swift in Headers */ = {isa = PBXBuildFile; fileRef = 27DC1A5F2389011200973500 /* UFAlert.swift */; platformFilter = ios; settings = {ATTRIBUTES = (Public, ); }; };
+		276D82CC23AD4EB200CFF86C /* UFPopoverBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2783A5CF23A65A7900139569 /* UFPopoverBaseViewController.swift */; platformFilter = ios; };
+		276D82CD23AD4EB700CFF86C /* UFPopoverBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2783A5D023A65A7900139569 /* UFPopoverBaseViewController.xib */; };
+		276D82CE23AD531B00CFF86C /* UFPopoverBaseViewController.swift in Headers */ = {isa = PBXBuildFile; fileRef = 2783A5CF23A65A7900139569 /* UFPopoverBaseViewController.swift */; platformFilter = ios; settings = {ATTRIBUTES = (Private, ); }; };
+		276D82D523AD5C5D00CFF86C /* UFAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270001B923887A8900C8C4C4 /* UFAlert.framework */; };
+		276D82D623AD5C5D00CFF86C /* UFAlert.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 270001B923887A8900C8C4C4 /* UFAlert.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27DC1A602389011200973500 /* UFAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DC1A5F2389011200973500 /* UFAlert.swift */; platformFilter = ios; };
 		27DC1A672389A2AC00973500 /* UFAlertTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DC1A662389A2AC00973500 /* UFAlertTest.swift */; };
 		27DC1A6B238A979900973500 /* UFBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DC1A69238A979900973500 /* UFBannerView.swift */; platformFilter = ios; };
@@ -33,7 +38,28 @@
 			remoteGlobalIDString = 270001B823887A8900C8C4C4;
 			remoteInfo = UFAlert;
 		};
+		276D82D723AD5C5D00CFF86C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 270001B023887A8900C8C4C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 270001B823887A8900C8C4C4;
+			remoteInfo = UFAlert;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		276D82D923AD5C5D00CFF86C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				276D82D623AD5C5D00CFF86C /* UFAlert.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		270001B923887A8900C8C4C4 /* UFAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UFAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,7 +75,9 @@
 		2722905C23A564F300DB6B4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2722905F23A564F300DB6B4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2722906123A564F300DB6B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		275DE79A23A41A1B0018E53D /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		275DE79A23A41A1B0018E53D /* UFPaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFPaddingLabel.swift; sourceTree = "<group>"; };
+		2783A5CF23A65A7900139569 /* UFPopoverBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFPopoverBaseViewController.swift; sourceTree = "<group>"; };
+		2783A5D023A65A7900139569 /* UFPopoverBaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UFPopoverBaseViewController.xib; sourceTree = "<group>"; };
 		27DC1A5F2389011200973500 /* UFAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFAlert.swift; sourceTree = "<group>"; };
 		27DC1A662389A2AC00973500 /* UFAlertTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UFAlertTest.swift; sourceTree = "<group>"; };
 		27DC1A69238A979900973500 /* UFBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFBannerView.swift; sourceTree = "<group>"; };
@@ -76,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				276D82D523AD5C5D00CFF86C /* UFAlert.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +118,7 @@
 				270001C623887A8900C8C4C4 /* UFAlertTests */,
 				2722905223A564F100DB6B4B /* UFAlert_Example */,
 				270001BA23887A8900C8C4C4 /* Products */,
+				276D82CF23AD5C4000CFF86C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,15 +168,32 @@
 		275DE79723A418630018E53D /* Toast */ = {
 			isa = PBXGroup;
 			children = (
-				275DE79A23A41A1B0018E53D /* PaddingLabel.swift */,
+				275DE79A23A41A1B0018E53D /* UFPaddingLabel.swift */,
 			);
 			path = Toast;
+			sourceTree = "<group>";
+		};
+		276D82CF23AD5C4000CFF86C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27BA4A3123A5D87100F76BA4 /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				2783A5CF23A65A7900139569 /* UFPopoverBaseViewController.swift */,
+				2783A5D023A65A7900139569 /* UFPopoverBaseViewController.xib */,
+			);
+			path = Popover;
 			sourceTree = "<group>";
 		};
 		27DC1A5E2389008A00973500 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				27DC1A5F2389011200973500 /* UFAlert.swift */,
+				27BA4A3123A5D87100F76BA4 /* Popover */,
 				275DE79723A418630018E53D /* Toast */,
 				27DC1A68238A977600973500 /* Banner */,
 			);
@@ -170,9 +217,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				270001CA23887A8900C8C4C4 /* UFAlert.h in Headers */,
-				275DE79C23A41A4B0018E53D /* PaddingLabel.swift in Headers */,
+				275DE79C23A41A4B0018E53D /* UFPaddingLabel.swift in Headers */,
 				275DE79E23A41A8F0018E53D /* UFAlert.swift in Headers */,
 				275DE78F23A2C1A70018E53D /* UFBannerView.swift in Headers */,
+				276D82CE23AD531B00CFF86C /* UFPopoverBaseViewController.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,10 +270,12 @@
 				2722904D23A564F100DB6B4B /* Sources */,
 				2722904E23A564F100DB6B4B /* Frameworks */,
 				2722904F23A564F100DB6B4B /* Resources */,
+				276D82D923AD5C5D00CFF86C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				276D82D823AD5C5D00CFF86C /* PBXTargetDependency */,
 			);
 			name = UFAlert_Example;
 			productName = UFAlert_Example;
@@ -279,6 +329,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				276D82CD23AD4EB700CFF86C /* UFPopoverBaseViewController.xib in Resources */,
 				27DC1A6C238A979900973500 /* UFBannerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,7 +358,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				275DE79B23A41A1B0018E53D /* PaddingLabel.swift in Sources */,
+				276D82CC23AD4EB200CFF86C /* UFPopoverBaseViewController.swift in Sources */,
+				275DE79B23A41A1B0018E53D /* UFPaddingLabel.swift in Sources */,
 				27DC1A602389011200973500 /* UFAlert.swift in Sources */,
 				27DC1A6B238A979900973500 /* UFBannerView.swift in Sources */,
 			);
@@ -338,6 +390,11 @@
 			isa = PBXTargetDependency;
 			target = 270001B823887A8900C8C4C4 /* UFAlert */;
 			targetProxy = 270001C423887A8900C8C4C4 /* PBXContainerItemProxy */;
+		};
+		276D82D823AD5C5D00CFF86C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 270001B823887A8900C8C4C4 /* UFAlert */;
+			targetProxy = 276D82D723AD5C5D00CFF86C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -499,6 +556,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = UFAlert/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -530,6 +588,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = UFAlert/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

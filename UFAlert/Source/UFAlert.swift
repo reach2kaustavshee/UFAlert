@@ -9,10 +9,6 @@
 import Foundation
 import UIKit
 
-
-
-
-
 /// This is an Alert Display short class
 open class UFAlert {
     
@@ -40,6 +36,8 @@ open class UFAlert {
             self.style = style
         }
     }
+    
+    fileprivate static let bundleIdentifier = "ks.com.UFAlert"
     
     
     /// This method will display alert and action sheet from either view controller or from window's root view controller
@@ -94,7 +92,7 @@ open class UFAlert {
         guard let msg = msg, !(msg.isEmpty) else { return }
         
         
-        let label = PaddingLabel()
+        let label = UFPaddingLabel()
         label.textColor = textColor
         label.backgroundColor = bgcolor.withAlphaComponent(alpha)
         label.layer.cornerRadius = 7.0
@@ -182,6 +180,22 @@ open class UFAlert {
             })
         }
         setupProperties(forBannerView: banner, BackgroundColor: bgColor, TextColor: textColor, Title: strTitle, ShortDescription: strShortDescription, Image: image)
+    }
+    
+    open class func displayCustomPopover(fromViewController vc:UIViewController? = UIApplication.shared.keyWindow?.rootViewController, withMessage msg:String?, Header header:String?, FromView fromView:UIView?, FromBounds bounds:CGRect?,_ preferedContentSize:CGSize,_ alertControllerPresented:(()->())? = nil,_ alertControllerDismissed:(()->())? = nil) {
+        
+        let bundle = Bundle(identifier: bundleIdentifier)
+        let pop = UFPopoverBaseViewController(nibName: String(describing: UFPopoverBaseViewController.self), bundle: bundle)
+        pop.modalPresentationStyle = .popover
+        pop.preferredContentSize = preferedContentSize
+        if let pres = pop.presentationController {
+            pres.delegate = pop
+        }
+        if let popover: UIPopoverPresentationController = pop.popoverPresentationController {
+            popover.sourceView = fromView
+            popover.sourceRect = bounds!
+        }
+        vc?.present(pop, animated: true, completion:nil)
     }
     
     deinit {

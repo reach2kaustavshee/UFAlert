@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         case actionSheet = "Action Sheet"
         case banner = "Banner"
         case toast = "Toast"
+        case popover = "Popover"
     }
 
     override func viewDidLoad() {
@@ -48,6 +49,8 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource {
             displayBanner()
         case .toast:
             displayToast()
+        case .popover:
+            displayPopover()
         }
     }
     private func displayAlert() {
@@ -70,6 +73,9 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource {
 
     private func displayToast() {
         UFAlert.displayToastMessage(OnView: self.view, Message: "Hello world")
+    }
+    private func displayPopover() {
+        UFAlert.displayCustomPopover(withMessage: "gjhgjg hgj", Header: "tt", FromView: self.view, FromBounds: CGRect(x: 0, y: 0, width: 100, height: 10), CGSize(width: 150.0, height: 200.0))
     }
 }
 
